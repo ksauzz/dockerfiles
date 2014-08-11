@@ -10,3 +10,5 @@ RUN tar zxvf otp_src_R16B03-1.tar.gz
 
 WORKDIR otp_src_R16B03-1
 RUN ./configure && make && make install
+
+WORKDIR /root
