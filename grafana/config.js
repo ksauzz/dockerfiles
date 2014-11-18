@@ -13,7 +13,7 @@ function (Settings) {
     datasources: {
       influxdb: {
         type: 'influxdb',
-        url: "http://localhost:8086/db/grafana",
+        url: "http://"+window.location.hostname+":8086/db/grafana",
         username: 'grafana',
         password: 'grafana',
         default: true
